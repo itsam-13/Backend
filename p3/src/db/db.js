@@ -1,13 +1,17 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose")
+const dns = require('dns')
 
-function connectToDB() {
-    mongoose.connect("mongodb+srv://abhineetam13_db_user:2a9eTnz7DPK3cz72@cluster0.gbf2zh1.mongodb.net/cohort")
-        .then(() => {
-            console.log("connected to Db")
-        })
-        .catch((err) => {
-            console.error("DB connection failed:", err)
-        })
+dns.setServers([
+    '8.8.8.8',
+    '1.1.1.1'
+])
+
+function connectToDB(){
+    mongoose.connect("mongodb+srv://itsam13:gg0J3TYFOQElZQYi@cluster0.dshgcdv.mongodb.net/cohort")
+    .then(()=>{
+        console.log("Connected to DB");
+        
+    })
 }
 
 module.exports = connectToDB
