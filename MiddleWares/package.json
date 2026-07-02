@@ -1,5 +1,5 @@
 {
-  "name": "p3",
+  "name": "middlewares",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,8 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mongoose": "^9.7.3"
+    "express": "^5.2.1"
   }
 }
