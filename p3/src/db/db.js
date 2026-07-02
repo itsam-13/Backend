@@ -7,7 +7,7 @@ dns.setServers([
 ])
 
 function connectToDB(){
-    mongoose.connect("mongodb+srv://itsam13:gg0J3TYFOQElZQYi@cluster0.dshgcdv.mongodb.net/cohort")
+    mongoose.connect(process.config.MONGODB_URL)
     .then(()=>{
         console.log("Connected to DB");
         
